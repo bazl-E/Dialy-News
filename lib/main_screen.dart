@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.of(context)
                               .push(MaterialPageRoute(builder: (_) {
                             return DetailSCreen(
-                              id: snap.data![it].id,
+                              title: snap.data![it].title,
                             );
                           }));
                         },
@@ -87,18 +87,22 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(10),
-                              child: CachedNetworkImage(
-                                imageUrl: snap.data![it].image,
-                                fit: BoxFit.cover,
-                                height: 220,
-                                width: double.infinity,
-                                errorWidget: (ctx, rl, wi) => Center(
-                                    child: Text(
-                                  'Image Unvilable',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                )),
-                                placeholder: (ctx, s) => Image(
-                                  image: AssetImage('assets/place.png'),
+                              child: Hero(
+                                tag: snap.data![it].title,
+                                child: CachedNetworkImage(
+                                  imageUrl: snap.data![it].image,
+                                  fit: BoxFit.cover,
+                                  height: 220,
+                                  width: double.infinity,
+                                  errorWidget: (ctx, rl, wi) => Center(
+                                      child: Text(
+                                    'Image Unvilable',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  )),
+                                  placeholder: (ctx, s) => Image(
+                                    image: AssetImage('assets/place.png'),
+                                  ),
                                 ),
                               ),
                             ),
@@ -127,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.of(context)
                               .push(MaterialPageRoute(builder: (_) {
                             return DetailSCreen(
-                              id: snap.data![i].id,
+                              title: snap.data![i].title,
                             );
                           }));
                         },
@@ -139,17 +143,20 @@ class _HomePageState extends State<HomePage> {
                               width: 250,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
-                                child: CachedNetworkImage(
-                                  imageUrl: snap.data![i].image,
-                                  fit: BoxFit.cover,
-                                  errorWidget: (ctx, rl, wi) => Center(
-                                      child: Text(
-                                    'Image Unvilable',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
-                                  )),
-                                  placeholder: (ctx, s) => Image(
-                                    image: AssetImage('assets/place.png'),
+                                child: Hero(
+                                  tag: snap.data![i].title,
+                                  child: CachedNetworkImage(
+                                    imageUrl: snap.data![i].image,
+                                    fit: BoxFit.cover,
+                                    errorWidget: (ctx, rl, wi) => Center(
+                                        child: Text(
+                                      'Image Unvilable',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    )),
+                                    placeholder: (ctx, s) => Image(
+                                      image: AssetImage('assets/place.png'),
+                                    ),
                                   ),
                                 ),
                               ),

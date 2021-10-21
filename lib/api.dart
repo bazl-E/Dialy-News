@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 
 Future<List<News>> fetchNews() async {
   try {
@@ -43,9 +44,12 @@ Future<List<News>> fetchNews() async {
 
 List<News> newses = [];
 
-News getNews(String id) {
-  return newses.firstWhere((element) => element.id == id);
+News getNews(String title) {
+  return newses.firstWhere((element) => element.title == title);
 }
+
+void launchURL(String url) async =>
+    await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 
 class News {
   News({
