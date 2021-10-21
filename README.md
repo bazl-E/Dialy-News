@@ -1,4 +1,4 @@
-# Dialy Newses
+# Dialy News
 
 A new Flutter project.
 
