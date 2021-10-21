@@ -1,4 +1,4 @@
-# jokes
+# Dialy News
 
 A new Flutter project.
 
