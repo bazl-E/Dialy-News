@@ -1,16 +1,39 @@
 # Dialy News
 
-A new Flutter project.
+A News App using [API from newsapi.org](newsapi.org) and using Bloc.
 
-## Getting Started
+# Working 
 
-This project is a starting point for a Flutter application.
+### ⚡ Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<br>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/84278736/138584601-6021d3a1-e6c9-4859-b671-17b1f80eec61.png" width="30%"></img> =><img src="Screenshots/feed.jpeg" width="30%"></img>=> <img src="Screenshots/article1.jpeg" width="30%"></img> 
+    <img src="Screenshots/article2.jpeg" width="160"></img> 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    
+</p>
+<br>
+<br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ⚡ video
+<br>
+<p align="center">
+    <img src="Screenshots/Demo.gif" width="30%"></img> 
+
+    
+</p>
+<br>
+<br>
+
+
+### Before Running
+- Replace the <API_KEY> in ```lib/res/strings.dart``` with your own API key generated from [newsapi.org](newsapi.org).
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+![Visitor count](https://visitor-badge.laobi.icu/badge?page_id=nirala96.Flutter-News-App)
