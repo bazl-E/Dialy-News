@@ -8,23 +8,15 @@ A News App using [API from newsapi.org](newsapi.org) and using Bloc.
 
 <br>
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/84278736/138584601-6021d3a1-e6c9-4859-b671-17b1f80eec61.png" width="30%"></img> =><img src="Screenshots/feed.jpeg" width="30%"></img>=> <img src="Screenshots/article1.jpeg" width="30%"></img> 
-    <img src="Screenshots/article2.jpeg" width="160"></img> 
+    <img src="https://user-images.githubusercontent.com/84278736/138584601-6021d3a1-e6c9-4859-b671-17b1f80eec61.png" width="30%"></img> =><img src="Screenshots/feed.jpeg" width="30%"></img>=> <img src="https://user-images.githubusercontent.com/84278736/138584654-2d27beb8-c06b-415d-86c9-97b55afd8a9c.png" width="30%"></img> 
+    <img src="https://user-images.githubusercontent.com/84278736/138584685-20fb8040-2083-4062-bf26-a0380e3ce555.png" width="160"></img> 
 
     
 </p>
 <br>
 <br>
 
-### ⚡ video
-<br>
-<p align="center">
-    <img src="Screenshots/Demo.gif" width="30%"></img> 
 
-    
-</p>
-<br>
-<br>
 
 
 ### Before Running
